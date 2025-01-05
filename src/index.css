@@ -1,0 +1,87 @@
+/*Reset*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+
+/* ------------------------------------------------------------------------------------------------- */
+
+
+#root{
+  display: flex;
+  flex-direction: row ;
+  margin: 0 !important;
+  flex-grow: 1;
+  padding: 25px !important;
+  max-width: 1800px !important;
+  column-gap: 2rem;
+  height: 100%;
+  font-family: "Inter";
+}
+
+
+a{
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 60px;
+  color: black;
+  height: auto;
+  margin: 0 auto;
+}
+
+
+.aside{
+  text-wrap: wrap;
+  flex: 1 1 auto;
+  flex-basis: 10px;
+  background-color: #f0f0f0;
+}
+
+
+.mainform{
+  display: flex;
+  flex-direction: column ;
+  gap: 5rem;
+  text-align: center;
+  flex: 1 1 auto;
+  flex-basis: 10px;
+  align-items: flex-start;
+} 
+
