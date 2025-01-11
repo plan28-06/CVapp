@@ -6,6 +6,8 @@
     font-size: 22.5px;
     align-self: center;
     font-weight: 550;
+    align-items: center;
+    width: 100%;
 }
 
 .items> *{
@@ -13,7 +15,7 @@
     border-radius: 1rem;
     padding: 0.8rem;
     text-align: left;
-    width: 20rem;
+    width: calc(100% - 2rem);
 }
 
 .hide{

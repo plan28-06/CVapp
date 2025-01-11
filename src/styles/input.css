@@ -3,7 +3,8 @@
     font-size: 20px;
     display: flex;
     flex-wrap: wrap;
-    gap: 0.6rem;
+    gap: 0.7rem;
+    column-gap: 4rem;
     flex-basis: auto;
 }
 
@@ -12,6 +13,6 @@
     display: flex;
     flex-direction: column;
     font-weight: 300;
-    gap: 0.6rem;
+    gap: 0.4rem;
 }
 
