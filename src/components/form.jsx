@@ -1,7 +1,6 @@
 import { useState } from "react";
-import '../styles/form.css'
+import "../styles/form.css";
 import { Basic } from "./basic";
-
 
 function Form({
     basicData,
@@ -20,23 +19,23 @@ function Form({
                 CV Application Creator
             </a>
             <div className="items">
-                <div
-                    className="basic"
-                    onClick={() =>
-                        setselected(selected === "basic" ? "null" : "basic")
-                    }>
-                    Basic Details
+                <div className="basic">
+                    <p
+                        onClick={() =>
+                            setselected(selected === "basic" ? "null" : "basic")
+                        }>
+                        Basic Details
+                    </p>
                     <div
                         className={`dropdown ${
                             selected === "basic" ? "show" : "hide"
                         }`}>
                         <Basic
-                            basicdata={basicdata}
+                            basicdata={basicData}
                             handleName={handleName}
                             handlePhone={handlePhone}
                             handleMail={handleMail}
-                            handleGithub={handleGithub}>
-                        </Basic>
+                            handleGithub={handleGithub}></Basic>
                     </div>
                 </div>
                 <div className="education">Education Details</div>

@@ -1,0 +1,17 @@
+.dropdownitems{
+    padding: 0.75rem;
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    flex-basis: auto;
+}
+
+.dropdownitem{
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    font-weight: 300;
+    gap: 0.6rem;
+}
+

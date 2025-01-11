@@ -27,10 +27,11 @@ function App() {
         setbasicdata({ ...basicdata, github: e.target.value });
     }
 
+
     return (
         <>
             <Form
-                basicdata={basicdata}
+                basicData={basicdata}
                 handleName={handleName}
                 handlePhone={handlePhone}
                 handleMail={handleMail}
