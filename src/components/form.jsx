@@ -2,9 +2,10 @@ import { useState } from "react";
 import "../styles/form.css";
 import { Basic } from "./basic";
 import { Education } from "./education";
+import { Experience } from "./experience";
 
 function Form({
-    basicData, 
+    basicData,
     handleName,
     handlePhone,
     handleMail,
@@ -19,6 +20,18 @@ function Form({
     handleDegree2,
     handleCity2,
     handlePeriod2,
+    expdata,
+    expdata2,
+    handlePosition,
+    handleCompany,
+    handleExp,
+    handleExpCity,
+    handlePosition2,
+    handleCompany2,
+    handleExp2,
+    handleExpCity2,
+    handleDes,
+    handleDes2,
 }) {
     const [selected, setselected] = useState("null");
     return (
@@ -51,9 +64,11 @@ function Form({
                 </div>
                 <div className="education">
                     <p
-                        onClick={() => setselected(
-                            selected === "education" ? "null" : "education"
-                        )}>
+                        onClick={() =>
+                            setselected(
+                                selected === "education" ? "null" : "education"
+                            )
+                        }>
                         Educational Details
                     </p>
                     <div
@@ -81,7 +96,44 @@ function Form({
                             handleCity={handleCity2}></Education>
                     </div>
                 </div>
-                <div className="exp">Experience</div>
+                <div className="exp">
+                    <p
+                        onClick={() =>
+                            setselected(
+                                selected === "experience"
+                                    ? "null"
+                                    : "experience"
+                            )
+                        }>
+                        Experience
+                    </p>
+                    <div
+                        className={`dropdown exp1 ${
+                            selected === "experience" ? "show" : "hide"
+                        }`}>
+                        <h6>Experience 1</h6>
+                        <Experience
+                            expdata={expdata}
+                            handlePosition={handlePosition}
+                            handleCompany={handleCompany}
+                            handleExp={handleExp}
+                            handleExpCity={handleExpCity}
+                            handleDes={handleDes}></Experience>
+                    </div>
+                    <div
+                        className={`dropdown exp2 ${
+                            selected === "experience" ? "show" : "hide"
+                        }`}>
+                        <h6>Experience 2</h6>
+                        <Experience
+                            expdata={expdata2}
+                            handlePosition={handlePosition2}
+                            handleCompany={handleCompany2}
+                            handleExp={handleExp2}
+                            handleExpCity={handleExpCity2}
+                            handleDes={handleDes2}></Experience>
+                    </div>
+                </div>
             </div>
         </div>
     );
