@@ -22,3 +22,9 @@
     display: none;
 }
 
+h6{
+    font-weight: 400;
+    font-size: 20px;
+    margin-top: 0.5rem;
+    width: 100%;
+}

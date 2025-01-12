@@ -1,13 +1,24 @@
 import { useState } from "react";
 import "../styles/form.css";
 import { Basic } from "./basic";
+import { Education } from "./education";
 
 function Form({
-    basicData,
+    basicData, 
     handleName,
     handlePhone,
     handleMail,
     handleGithub,
+    eduData,
+    handleCollege,
+    handleDegree,
+    handleCity,
+    handlePeriod,
+    eduData2,
+    handleCollege2,
+    handleDegree2,
+    handleCity2,
+    handlePeriod2,
 }) {
     const [selected, setselected] = useState("null");
     return (
@@ -38,7 +49,38 @@ function Form({
                             handleGithub={handleGithub}></Basic>
                     </div>
                 </div>
-                <div className="education">Education Details</div>
+                <div className="education">
+                    <p
+                        onClick={() => setselected(
+                            selected === "education" ? "null" : "education"
+                        )}>
+                        Educational Details
+                    </p>
+                    <div
+                        className={`dropdown education1 ${
+                            selected === "education" ? "show" : "hide"
+                        }`}>
+                        <h6>Primary Degree</h6>
+                        <Education
+                            eduData={eduData}
+                            handleCollege={handleCollege}
+                            handleDegree={handleDegree}
+                            handleCity={handleCity}
+                            handlePeriod={handlePeriod}></Education>
+                    </div>
+                    <div
+                        className={`dropdown education2  ${
+                            selected === "education" ? "show" : "hide"
+                        }`}>
+                        <h6>Secondary Degree</h6>
+                        <Education
+                            eduData={eduData2}
+                            handleCollege={handleCollege2}
+                            handleDegree={handleDegree2}
+                            handlePeriod={handlePeriod2}
+                            handleCity={handleCity2}></Education>
+                    </div>
+                </div>
                 <div className="exp">Experience</div>
             </div>
         </div>
