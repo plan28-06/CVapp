@@ -1,8 +1,7 @@
-# React + Vite
+# CV App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a CV app using React that updates in real time as you fill in or adjust your details. By using hooks and state management, it provides a smooth, interactive experience where your resume automatically reflects any changes you make.
 
-Currently, two official plugins are available:
+## Website Link 
+For a live preview please visit [__CV-App.__](https://6784d04e357476e46c0c88d4--cvapp2806.netlify.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
