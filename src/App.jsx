@@ -1,4 +1,3 @@
-import "./App.css";
 import { Form } from "./components/form.jsx";
 import { Aside } from "./components/aside.jsx";
 import { useState } from "react";
@@ -30,8 +29,8 @@ function App() {
         company: `Texas A&M University`,
         expCity: `College Station, TX`,
         exp: `June 2020 \– Present`,
-        des: `• Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems
-• Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data
+        des: `• Developed a REST API using FastAPI and PostgreSQL to store data from learning management systems.
+• Developed a full-stack web application using Flask, React, PostgreSQL and Docker to analyze GitHub data.
 • Explored ways to visualize GitHub collaboration in a classroom setting`,
     });
 
@@ -151,7 +150,7 @@ function App() {
                 handlePeriod2={handlePeriod2}
                 handleCity2={handleCity2}
                 expdata={expdata}
-                expdata2={expdata2 }
+                expdata2={expdata2}
                 handlePosition={handlePosition}
                 handleCompany={handleCompany}
                 handleExp={handleExp}
@@ -162,7 +161,12 @@ function App() {
                 handleExpCity2={handleExp2}
                 handleDes={handleDes}
                 handleDes2={handleDes2}></Form>
-            <Aside></Aside>
+            <Aside
+                basicData={basicdata}
+                eduData={eduData}
+                eduData2={eduData2}
+                expdata={expdata}
+                expdata2={expdata2}></Aside>
         </>
     );
 }

@@ -1,0 +1,116 @@
+.username{
+    font-size: 60px;
+    font-weight: 700;
+    font-family: "Cormorant";
+    text-align: center;
+    margin-top: -25px;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    gap:8px;
+    font-family: "Cormorant";
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 0.8rem;
+}
+
+.social>a{
+    font-family: "Cormorant";
+    font-size: 25px;
+    font-weight: 500;
+    margin: 0;
+}
+
+.educontainer{
+    margin-top: 1.75rem ;
+}
+
+.edutitle{
+    font-family: "Cormorant";
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+
+.aside{
+    padding: 25px;
+}
+
+.edu1lhs,.edu1rhs{
+    display: flex;
+    flex-direction: column;
+}
+
+.uni1name,.edu1city{
+    font-size: 22.5px; 
+    font-family: 'Cormorant';
+    font-weight: 700;
+    margin-top: 0.7rem;
+}
+
+.degree,.period{
+    font-size: 22.5px; 
+    font-family: 'Cormorant';
+    font-weight: 500;
+    font-style: italic;
+}
+
+.edu1container,.edu1container2{
+    display: flex;
+    flex-direction: row;
+}
+.edu1lhs{
+    flex-grow:4
+}
+
+.exptitle{
+    font-family: "Cormorant";
+    font-size: 30px;
+    font-weight: 700;
+    border-bottom: 1px solid black;
+}
+
+.expcontainer{
+    margin-top: 1rem;
+}
+
+.exppos,.expperiod{
+    font-size: 22.5px; 
+    font-family: 'Cormorant';
+    font-weight: 700;
+    margin-top: 0.7rem;
+}
+
+.expcom,.expcity{
+    font-size: 22.5px; 
+    font-family: 'Cormorant';
+    font-weight: 500;
+    font-style: italic;
+}
+
+.exp1lhs,.exp1rhs,.exp2lhs,.exp2rhs{
+    display: flex;
+    flex-direction: column;
+}
+
+.exp1container,.exp2container{
+    display: flex;
+}
+
+.exp1lhs,.exp2lhs{
+    flex-grow: 4;
+}
+
+.exp1des,.exp2des{
+    font-size: 22.5px;
+    font-family: "Cormorant";
+    font-weight: 500;
+    text-decoration: wavy;
+    text-wrap: wrap;
+}
+
+.exp2des{
+    margin-bottom: 2rem;
+}
