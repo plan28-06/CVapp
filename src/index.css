@@ -87,3 +87,71 @@ a{
   align-items: flex-start;
 } 
 
+@media screen and (max-width: 1000px) {
+  #root {
+    flex-direction: column;
+  }
+
+  .mainform{
+    margin-bottom: 5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+
+  .social{
+    flex-direction: column;
+    gap: 20px !important;
+  }
+
+  .extra{
+    display: none;
+  }
+
+  .edu1container{
+    flex-direction: column !important;
+    margin-bottom: 30px !important;
+  }
+
+  .edu1container2{
+    flex-direction: column !important;
+    margin-bottom: 30px !important;
+  }
+
+  .exp1container{
+    flex-direction: column !important;
+    margin-bottom: 30px !important;
+  }
+
+  .exp1des{
+    margin-bottom: 30px;
+  }
+
+  .exp2container{
+    flex-direction: column !important;
+    margin-bottom: 30px !important;
+  }
+
+  .username{
+    line-height: 2.5rem !important;
+    margin-bottom: 30px !important;
+    margin-top: -15px !important;
+  }
+
+  .dropdownitems{
+    margin-left:auto !important;
+    margin-right: auto !important;
+    padding: 8px !important;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .education,.basic,.exp{
+    width: calc(100% - 1rem) !important;
+  }
+
+  .dropdownitems{
+    padding: 0px !important;
+  }
+}

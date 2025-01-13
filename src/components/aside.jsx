@@ -7,10 +7,10 @@ function Aside({basicData,expdata,expdata2,eduData,eduData2}) {
             <div className="header">
                 <div className="username">{basicData.name}</div>
                 <div className="social">
-                    {basicData.phone}
-                    <div>|</div>
-                    {basicData.mail}
-                    <div>|</div>
+                    <div>{basicData.phone}</div>
+                    <div className="extra">|</div>
+                    <div>{basicData.mail}</div>
+                    <div className="extra">|</div>
                     <a href={basicData.github}> {basicData.github}</a>
                 </div>
             </div>
