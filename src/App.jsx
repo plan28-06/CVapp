@@ -77,19 +77,19 @@ function App() {
     }
 
     function handleCollege2(e) {
-        setEduData({ ...eduData2, college: e.target.value });
+        setEduData2({ ...eduData2, college: e.target.value });
     }
 
     function handleDegree2(e) {
-        setEduData({ ...eduData2, degree: e.target.value });
+        setEduData2({ ...eduData2, degree: e.target.value });
     }
 
     function handleCity2(e) {
-        setEduData({ ...eduData2, city: e.target.value });
+        setEduData2({ ...eduData2, city: e.target.value });
     }
 
     function handlePeriod2(e) {
-        setEduData({ ...eduData2, period: e.target.value });
+        setEduData2({ ...eduData2, period: e.target.value });
     }
 
     function handlePosition(e){
@@ -113,23 +113,23 @@ function App() {
     }
 
     function handlePosition2(e) {
-        setexpdata({ ...expdata2, position: e.target.value });
+        setexpdata2({ ...expdata2, position: e.target.value });
     }
 
     function handleCompany2(e) {
-        setexpdata({ ...expdata2, company: e.target.value });
+        setexpdata2({ ...expdata2, company: e.target.value });
     }
 
     function handleExpCity2(e) {
-        setexpdata({ ...expdata2, expCity: e.target.value });
+        setexpdata2({ ...expdata2, expCity: e.target.value });
     }
 
     function handleExp2(e) {
-        setexpdata({ ...expdata2, exp: e.target.value });
+        setexpdata2({ ...expdata2, exp: e.target.value });
     }
 
     function handleDes2(e) {
-        setexpdata({ ...expdata2, des: e.target.value });
+        setexpdata2({ ...expdata2, des: e.target.value });
     }
     return (
         <>
@@ -154,11 +154,11 @@ function App() {
                 handlePosition={handlePosition}
                 handleCompany={handleCompany}
                 handleExp={handleExp}
-                handleExpCity={handleExp}
+                handleExpCity={handleExpCity}
                 handlePosition2={handlePosition2}
                 handleCompany2={handleCompany2}
                 handleExp2={handleExp2}
-                handleExpCity2={handleExp2}
+                handleExpCity2={handleExpCity2}
                 handleDes={handleDes}
                 handleDes2={handleDes2}></Form>
             <Aside
